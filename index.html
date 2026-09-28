@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SHRI POOJYAYA ENTERPRISES | Committed to Excellence</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        heading: ['"Outfit"', 'sans-serif'],
+                    },
+
+                    colors: {
+                        navy: {
+                            900: '#0B1220',
+                            800: '#111B2E',
+                            700: '#003092',
+                        },
+
+                        amber: {
+                            500: '#FF7A00',
+                            600: '#E85C0D',
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         BACKGROUND EFFECTS
+    ====================================================== -->
+
+    <div class="background-effects">
+
+        <div class="background-orb orb-orange"></div>
+
+        <div class="background-orb orb-orange-light"></div>
+
+        <div class="background-orb orb-blue"></div>
+
+    </div>
+
+
+    <!-- =====================================================
+         HEADER / NAVIGATION
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <!-- BRAND AREA -->
+
+            <div
+                class="brand-area"
+                onclick="switchSection('home')"
+            >
+
+                <!-- LOGO IMAGE -->
+
+                <div class="logo-box">
+
+                    <img
+                        src="Images/logo.jpg"
+                        alt="Shri Raghavendra Swamy"
+                    >
+
+                </div>
+
+
+                <!-- BUSINESS NAME -->
+
+                <div class="brand-text">
+
+                    <h1>
+                        SHRI POOJYAYA
+                        <span>ENTERPRISES</span>
+                    </h1>
+
+                    <p>
+                        "Committed to Excellence"
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPRIETOR AREA 
+
+            <div class="proprietor-header">
+
+                <div class="proprietor-photo-box">
+
+                    <img
+                       src="Images/Mounesh N.jpg"
+                        alt="Proprietor Mounesh Nayak"
+                        class="proprietor-photo"
+                    >
+
+                </div>
+
+                <div class="proprietor-header-text">
+
+                    <span>PROPRIETOR</span>
+
+                    <strong>MOUNESH NAYAK</strong>
+
+                </div>
+
+            </div>-->
+
+
+            <!-- DESKTOP NAVIGATION -->
+
+            <nav class="desktop-navigation">
+
+                <button
+                    onclick="switchSection('home')"
+                    id="nav-home"
+                    class="nav-btn active"
+                >
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </button>
+
+                <button
+                    onclick="switchSection('services')"
+                    id="nav-services"
+                    class="nav-btn"
+                >
+                    <i class="fa-solid fa-layer-group"></i>
+                    Services
+                </button>
+
+                <button
+                    onclick="switchSection('about')"
+                    id="nav-about"
+                    class="nav-btn"
+                >
+                    <i class="fa-solid fa-user-tie"></i>
+                    About
+                </button>
+
+                <button
+                    onclick="switchSection('contact')"
+                    id="nav-contact"
+                    class="nav-btn"
+                >
+                    <i class="fa-solid fa-headset"></i>
+                    Contact
+                </button>
+
+            </nav>
+
+
+            <!-- WHATSAPP -->
+
+            <a
+                href="https://wa.me/919900240988?text=Hello%20Shri%20Poojyaya%20Enterprises,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                target="_blank"
+                class="header-whatsapp"
+            >
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <span>WhatsApp</span>
+
+            </a>
+
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <button
+                class="mobile-menu-button"
+                onclick="toggleMobileMenu()"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- MOBILE MENU -->
+
+        <div
+            id="mobile-menu"
+            class="mobile-menu hidden"
+        >
+
+            <button
+                onclick="switchSection('home'); toggleMobileMenu();"
+            >
+                <i class="fa-solid fa-house"></i>
+                Home
+            </button>
+
+            <button
+                onclick="switchSection('services'); toggleMobileMenu();"
+            >
+                <i class="fa-solid fa-layer-group"></i>
+                Services
+            </button>
+
+            <button
+                onclick="switchSection('about'); toggleMobileMenu();"
+            >
+                <i class="fa-solid fa-user-tie"></i>
+                About & Proprietor
+            </button>
+
+            <button
+                onclick="switchSection('contact'); toggleMobileMenu();"
+            >
+                <i class="fa-solid fa-headset"></i>
+                Contact & Inquiry
+            </button>
+
+            <a
+                href="https://wa.me/919900240988?text=Hello%20Shri%20Poojyaya%20Enterprises,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                target="_blank"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp Direct
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="main-container">
+
+
+        <!-- =================================================
+             HOME SECTION
+        ================================================== -->
+
+        <section
+            id="section-home"
+            class="page-section"
+        >
+
+            <div class="hero-grid">
+
+
+                <!-- HERO TEXT -->
+
+                <div class="hero-content">
+
+                    <div class="location-badge">
+
+                        <span></span>
+
+                        Multi-Service Enterprise
+
+                        <b>•</b>
+
+                        RPC Layout, Bengaluru
+
+                    </div>
+
+
+                    <h2 class="hero-title">
+
+                        SHRI POOJYAYA
+
+                        <span>ENTERPRISES</span>
+
+                    </h2>
+
+
+                    <p class="hero-tagline">
+                        "Committed to Excellence"
+                    </p>
+
+
+                    <p class="hero-description">
+
+                        Reliable professional solutions for
+                        Electrical, Solar, Plumbing, Textiles &
+                        Garments, Furniture, Electronics,
+                        Plantation, Events and Institutional Support.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <button
+                            onclick="switchSection('services')"
+                            class="primary-button"
+                        >
+
+                            Explore All 8 Services
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                        <a
+                            href="https://wa.me/919900240988?text=Hello%20Shri%20Poojyaya%20Enterprises,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                            target="_blank"
+                            class="secondary-button"
+                        >
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            WhatsApp Us
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- TRUST FEATURES -->
+
+                    <div class="trust-grid">
+
+                        <div class="trust-item">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                            <span>Quality Assured</span>
+
+                        </div>
+
+
+                        <div class="trust-item">
+
+                            <i class="fa-solid fa-headset"></i>
+
+                            <span>Reliable Support</span>
+
+                        </div>
+
+
+                        <div class="trust-item">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                            <span>On-Time Service</span>
+
+                        </div>
+
+
+                        <div class="trust-item">
+
+                            <i class="fa-solid fa-award"></i>
+
+                            <span>Excellence</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROPRIETOR CARD -->
+
+                <div class="hero-proprietor-card">
+
+                    <div class="proprietor-card-glow"></div>
+
+                    <div class="proprietor-card-content">
+
+
+                        <div class="proprietor-card-heading">
+
+                            <div>
+
+                                <span>PROPRIETOR</span>
+
+                                <h3>MOUNESH NAYAK</h3>
+
+                            </div>
+
+
+                            <img
+                                src="Images/Mounesh p.jpg"
+                                alt="Mounesh Nayak"
+                                class="hero-owner-photo"
+                            >
+
+                        </div>
+
+
+                        <div class="contact-details">
+
+
+                            <div>
+
+                                <i class="fa-solid fa-phone"></i>
+
+                                <span>
+                                    +91 9900240988
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <i class="fa-solid fa-phone"></i>
+
+                                <span>
+                                    6361673372
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                                <span>
+                                    poojyayaenterprises@gmail.com
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <i class="fa-solid fa-file-invoice"></i>
+
+                                <span>
+                                    GST: 29CBNPM1254J1Z9
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <span>
+                                    RPC Layout, Bengaluru
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="https://wa.me/919900240988?text=Hello%20Mounesh%20Nayak,%20I%20would%20like%20to%20enquire%20about%20your%20services."
+                            target="_blank"
+                            class="proprietor-whatsapp"
+                        >
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            Connect with Proprietor
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HOME SERVICES OVERVIEW -->
+
+            <div class="overview-section">
+
+                <div class="section-heading">
+
+                    <span>
+                        SOLUTIONS FOR EVERY REQUIREMENT
+                    </span>
+
+                    <h2>
+                        Comprehensive Multi-Sector Support
+                    </h2>
+
+                    <p>
+                        One-stop professional enterprise serving
+                        homes, offices, institutions and corporate
+                        requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="overview-grid">
+
+
+                    <div class="overview-card">
+
+                        <div class="overview-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <h3>Electrical Works</h3>
+
+                        <p>
+                            Electrical installation,
+                            maintenance, wiring and related works.
+                        </p>
+
+                    </div>
+
+
+                    <div class="overview-card">
+
+                        <div class="overview-icon">
+                            <i class="fa-solid fa-solar-panel"></i>
+                        </div>
+
+                        <h3>Solar Works</h3>
+
+                        <p>
+                            Solar panels, rooftop solar,
+                            water heaters and solar lighting.
+                        </p>
+
+                    </div>
+
+
+                    <div class="overview-card">
+
+                        <div class="overview-icon">
+                            <i class="fa-solid fa-faucet-drip"></i>
+                        </div>
+
+                        <h3>Plumbing Works</h3>
+
+                        <p>
+                            Plumbing installation,
+                            maintenance and repair services.
+                        </p>
+
+                    </div>
+
+
+                    <div class="overview-card">
+
+                        <div class="overview-icon">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+
+                        <h3>Plantation & Gifting</h3>
+
+                        <p>
+                            Indoor plants and professional
+                            corporate gifting solutions.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SERVICES SECTION
+        ================================================== -->
+
+        <section
+            id="section-services"
+            class="page-section hidden"
+        >
+
+            <div class="section-heading">
+
+                <span>OUR SERVICES</span>
+
+                <h2>
+                    8 Professional Service Categories
+                </h2>
+
+                <p>
+                    Explore our complete range of products
+                    and professional services.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="service-search-wrapper">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="service-search"
+                    placeholder="Search services..."
+                    onkeyup="filterServices()"
+                >
+
+            </div>
+
+
+            <!-- SERVICES WILL BE GENERATED BY script.js -->
+
+            <div
+                id="services-grid"
+                class="services-grid"
+            ></div>
+
+        </section>
+
+
+        <!-- =================================================
+             ABOUT SECTION
+        ================================================== -->
+
+        <section
+            id="section-about"
+            class="page-section hidden"
+        >
+
+            <div class="about-card">
+
+
+                <div class="about-owner">
+
+                    <div class="about-photo-wrapper">
+
+                        <img
+                            src="Images/Mounesh P.jpg"
+                            alt="Proprietor Mounesh Nayak"
+                            class="about-owner-photo"
+                        >
+
+                    </div>
+
+
+                    <div class="about-owner-info">
+
+                        <span>
+                            PROPRIETOR
+                        </span>
+
+                        <h2>
+                            MOUNESH NAYAK
+                        </h2>
+
+                        <p>
+                            Shri Poojyaya Enterprises
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <span class="about-label">
+                        ABOUT SHRI POOJYAYA ENTERPRISES
+                    </span>
+
+                    <h2>
+                        Committed to Excellence
+                    </h2>
+
+                    <p>
+                        Under the leadership of Proprietor
+                        <strong>Mounesh Nayak</strong>,
+                        Shri Poojyaya Enterprises provides
+                        professional multi-service solutions
+                        for homes, offices, institutions,
+                        educational establishments and
+                        corporate requirements.
+                    </p>
+
+                    <p>
+                        Our services cover Electrical,
+                        Solar, Plumbing, Plantation &
+                        Gifting, Furniture & Academic
+                        Supplies, Electronic Products,
+                        Event & Institutional Support,
+                        and Textiles & Garments.
+                    </p>
+
+                </div>
+
+
+                <!-- WHY CHOOSE US -->
+
+                <div class="why-us">
+
+                    <h3>
+                        Why Choose Us?
+                    </h3>
+
+
+                    <div class="why-grid">
+
+
+                        <div class="why-card">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                            <h4>
+                                QUALITY ASSURED
+                            </h4>
+
+                            <p>
+                                Reliable products and
+                                professional services.
+                            </p>
+
+                        </div>
+
+
+                        <div class="why-card">
+
+                            <i class="fa-solid fa-headset"></i>
+
+                            <h4>
+                                RELIABLE SUPPORT
+                            </h4>
+
+                            <p>
+                                Dedicated customer support.
+                            </p>
+
+                        </div>
+
+
+                        <div class="why-card">
+
+                            <i class="fa-solid fa-stopwatch"></i>
+
+                            <h4>
+                                ON-TIME SERVICE
+                            </h4>
+
+                            <p>
+                                Focused on timely completion
+                                and delivery.
+                            </p>
+
+                        </div>
+
+
+                        <div class="why-card">
+
+                            <i class="fa-solid fa-star"></i>
+
+                            <h4>
+                                EXCELLENCE
+                            </h4>
+
+                            <p>
+                                Professional approach
+                                across every service.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTACT SECTION
+        ================================================== -->
+
+        <section
+            id="section-contact"
+            class="page-section hidden"
+        >
+
+            <div class="section-heading">
+
+                <span>
+                    CONTACT & INQUIRY
+                </span>
+
+                <h2>
+                    Get in Touch With Us
+                </h2>
+
+                <p>
+                    Fill out the form or connect instantly
+                    through WhatsApp or phone.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+
+                <!-- BUSINESS INFORMATION -->
+
+                <div class="business-info-card">
+
+                    <h3>
+                        Business Information
+                    </h3>
+
+
+                    <div class="business-info-list">
+
+
+                        <div class="business-info-item">
+
+                            <div class="info-icon orange">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+
+                            <div>
+                                <span>PROPRIETOR</span>
+                                <strong>Mounesh Nayak</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="business-info-item">
+
+                            <div class="info-icon green">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+
+                            <div>
+                                <span>PHONE NUMBERS</span>
+                                <strong>
+                                    9900240988, 6361673372
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="business-info-item">
+
+                            <div class="info-icon blue">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div>
+                                <span>EMAIL ADDRESS</span>
+                                <strong>
+                                    poojyayaenterprises@gmail.com
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="business-info-item">
+
+                            <div class="info-icon purple">
+                                <i class="fa-solid fa-file-invoice"></i>
+                            </div>
+
+                            <div>
+                                <span>GST NUMBER</span>
+                                <strong>
+                                    29CBNPM1254J1Z9
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="business-info-item">
+
+                            <div class="info-icon red">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div>
+                                <span>ADDRESS</span>
+                                <strong>
+                                    RPC Layout, Bengaluru
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-buttons">
+
+                        <a
+                            href="tel:+919900240988"
+                            class="call-button"
+                        >
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            Call Now
+
+                        </a>
+
+
+                        <a
+                            href="https://wa.me/919900240988"
+                            target="_blank"
+                            class="whatsapp-button"
+                        >
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            WhatsApp
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ENQUIRY FORM -->
+
+                <div class="enquiry-card">
+
+                    <h3>
+                        Send Enquiry on WhatsApp
+                    </h3>
+
+
+                    <form
+                        id="enquiry-form"
+                        onsubmit="handleFormSubmit(event)"
+                    >
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Your Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="form-name"
+                                required
+                                placeholder="Enter your full name"
+                            >
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label>
+                                    Phone Number *
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="form-phone"
+                                    required
+                                    placeholder="Enter your phone number"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="form-email"
+                                    placeholder="Enter your email"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Service Required *
+                            </label>
+
+                            <select
+                                id="form-service"
+                                required
+                            >
+
+                                <option
+                                    value=""
+                                    disabled
+                                    selected
+                                >
+                                    Select a service...
+                                </option>
+
+                                <option value="Electrical Works">
+                                    1. Electrical Works
+                                </option>
+
+                                <option value="Solar Works">
+                                    2. Solar Works
+                                </option>
+
+                                <option value="Plumbing Works">
+                                    3. Plumbing Works
+                                </option>
+
+                                <option value="Plantation & Gifting Services">
+                                    4. Plantation & Gifting Services
+                                </option>
+
+                                <option value="Furniture & Academic Supplies">
+                                    5. Furniture & Academic Supplies
+                                </option>
+
+                                <option value="Supply of Electronic Products">
+                                    6. Supply of Electronic Products
+                                </option>
+
+                                <option value="Event & Institutional Support">
+                                    7. Event & Institutional Support
+                                </option>
+
+                                <option value="Textiles & Garments">
+                                    8. Textiles & Garments
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Message / Details *
+                            </label>
+
+                            <textarea
+                                id="form-message"
+                                rows="5"
+                                required
+                                placeholder="Describe your requirement..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="send-enquiry-button"
+                        >
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            Send Enquiry on WhatsApp
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <!-- LOCATION -->
+
+            <div class="location-card">
+
+                <div>
+
+                    <h3>
+                        Visit Our Office / Location
+                    </h3>
+
+                    <p>
+                        RPC Layout, Bengaluru
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Shri+Poojyaya+Enterprises+RPC+Layout+Bengaluru"
+                    target="_blank"
+                    class="directions-button"
+                >
+
+                    <i class="fa-solid fa-map-location-dot"></i>
+
+                    Get Directions
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FLOATING WHATSAPP
+    ====================================================== -->
+
+    <a
+        href="https://wa.me/919900240988?text=Hello%20Shri%20Poojyaya%20Enterprises,%20I%20would%20like%20to%20enquire%20about%20your%20services."
+        target="_blank"
+        class="floating-whatsapp"
+        aria-label="WhatsApp"
+    >
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-main">
+
+
+                <div class="footer-brand">
+
+                    <div class="footer-brand-row">
+
+                        <div class="footer-logo">
+
+                            <img
+                                src="Images/logo.jpg"
+                                alt="Shri Raghavendra Swamy"
+                            >
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                SHRI POOJYAYA ENTERPRISES
+                            </h3>
+
+                            <span>
+                                "Committed to Excellence"
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Multi-service enterprise providing
+                        electrical, solar, plumbing, garments,
+                        furniture, electronics, plantation,
+                        and institutional support in Bengaluru.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <h4>
+                        Quick Links
+                    </h4>
+
+                    <button onclick="switchSection('home')">
+                        Home
+                    </button>
+
+                    <button onclick="switchSection('services')">
+                        Services
+                    </button>
+
+                    <button onclick="switchSection('about')">
+                        About & Proprietor
+                    </button>
+
+                    <button onclick="switchSection('contact')">
+                        Contact & Inquiry
+                    </button>
+
+                </div>
+
+
+                <div class="footer-contact">
+
+                    <h4>
+                        Contact Info
+                    </h4>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 9900240988
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        6361673372
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        poojyayaenterprises@gmail.com
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        RPC Layout, Bengaluru
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="current-year">2026</span>
+                    Shri Poojyaya Enterprises.
+                    All Rights Reserved.
+                </p>
+
+                <p>
+                    Proprietor: Mounesh Nayak
+                    |
+                    GST: 29CBNPM1254J1Z9
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
