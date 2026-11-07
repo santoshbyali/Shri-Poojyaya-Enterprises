@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shri-poojyaya-enterprises.pages.dev/sitemap.xml
