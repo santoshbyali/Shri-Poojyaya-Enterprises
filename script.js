@@ -456,7 +456,7 @@ function enquireService(serviceId) {
 
 
     const phone =
-        "919900240988";
+        "9964595924";
 
 
     const message =
@@ -538,7 +538,7 @@ function handleFormSubmit(event) {
 
 
     const whatsappUrl =
-        `https://wa.me/919900240988?text=${encodeURIComponent(
+        `https://wa.me/9964595924?text=${encodeURIComponent(
             whatsappMessage
         )}`;
 

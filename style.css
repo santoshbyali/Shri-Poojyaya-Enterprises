@@ -65,17 +65,17 @@ body {
     background:
         radial-gradient(
             circle at 8% 20%,
-            rgba(255, 122, 0, 0.25),
+            rgb(36, 26, 223),
             transparent 32%
         ),
         radial-gradient(
             circle at 92% 38%,
-            rgba(255, 177, 92, 0.15),
+            rgba(33, 6, 241, 0),
             transparent 30%
         ),
         radial-gradient(
             circle at 50% 100%,
-            rgba(0, 48, 146, 0.25),
+            rgba(46, 36, 36, 0.963),
             transparent 35%
         ),
         linear-gradient(
@@ -144,7 +144,7 @@ a {
 
 .orb-orange {
 
-    background: #FF6500;
+    background: #ef7f4b;
 
     left: -80px;
 
@@ -155,7 +155,7 @@ a {
 
 .orb-orange-light {
 
-    background: #FF9A3D;
+    background: #d66b47;
 
     right: -100px;
 
